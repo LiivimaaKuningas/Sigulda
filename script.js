@@ -20,7 +20,7 @@ function createBloodDrop() {
 }
 
 // Create blood drops at intervals
-setInterval(createBloodDrop, 100);
+setInterval(createBloodDrop, 500);
 
 
 const backgroundMusic = document.getElementById('background-music');
