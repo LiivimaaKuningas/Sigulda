@@ -23,7 +23,7 @@ function createBloodDrop() {
 setInterval(createBloodDrop, 100);
 
 
-const backgroundMusic = document.getElementById("background-music");
+const backgroundMusic = document.getElementById("backgroundMusic");
 
 // Set initial volume (0 to 1, where 1 is 100%)
 backgroundMusic.volume = 0.5;
