@@ -20,13 +20,13 @@ function createBloodDrop() {
 }
 
 // Create blood drops at intervals
-setInterval(createBloodDrop, 500);
+setInterval(createBloodDrop, 100);
 
 
 const backgroundMusic = document.getElementById('background-music');
 
 // Set initial volume (0 to 1, where 1 is 100%)
-backgroundMusic.volume = 1;
+backgroundMusic.volume = 0.5;
 
 // Example: Mute/Unmute Toggle
 document.addEventListener('click', () => {
