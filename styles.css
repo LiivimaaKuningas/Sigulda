@@ -1,0 +1,85 @@
+/* Reset some default styles */
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    border: 5px solid #f4a261;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    background: #444;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+/* Blood Container */
+.blood-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+/* Blood Drop Style */
+.blood-drop {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    animation: fall linear infinite;
+    opacity: 0.8;
+}
+
+/* Animation for Falling */
+@keyframes fall {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
